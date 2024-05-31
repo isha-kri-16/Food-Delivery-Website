@@ -22,29 +22,7 @@ const StoreContextProvider = (props) => {
     const removeFromCart = (itemId) => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId]-1}))
     }
-
-
-//functionality for cart items total :
-
-// const getTotalCartAmount = () => {
-//     let totalAmount = 0;
-//     for (const item in cartItems) 
-//     {
-//         if (cartItems[item] > 0 ) {
-//             let itemInfo = food_list.find((product) => product.id === item );
-//             if (itemInfo) {
-//                 totalAmount += itemInfo.price * cartItems[item];
-//             }  else {
-//                 console.error(`Item with ID ${item} not found in food_list` );
-//             }
-//         }
-//     }
-//     return totalAmount;
-// } 
-
-
-
-
+    
 
 
 const getTotalCartAmount = () => {
